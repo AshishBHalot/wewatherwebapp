@@ -19,6 +19,13 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement> 
+    <repository>
+        <id>internal.repo</id> 
+        <name>Temporary Staging Repository</name> 
+        <url>file://${project.build.directory}/mvn-artifact</url> 
+    </repository> 
+</distributionManagement>
   <dependencies>
   	<dependency>
   		<groupId>mysql</groupId>
@@ -39,4 +46,5 @@
 </dependency>
  
   </dependencies>
+  
 </project>
